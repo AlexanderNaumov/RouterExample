@@ -6,6 +6,8 @@ public final class Navigator: ObservableObject {
     
     let path = CurrentValueSubject<String, Never>("")
     
+    public init() {}
+    
     public func navigate(_ path: String) {
         let path = resolvePaths(self.path.value, path)
         
