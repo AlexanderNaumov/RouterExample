@@ -18,7 +18,7 @@
 		117BD920297993C900FB2C9F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117BD91F297993C900FB2C9F /* MainView.swift */; };
 		117D2726296F1B1F00FA4D3B /* FullScreenContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117D2725296F1B1F00FA4D3B /* FullScreenContent.swift */; };
 		11BBAFEC2969E2AA00C0A213 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BBAFEB2969E2AA00C0A213 /* FullScreenView.swift */; };
-		11E8AFFB2971AA2A00969833 /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = 11E8AFFA2971AA2A00969833 /* Router */; };
+		11CC142C297EEB5000DC5E89 /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = 11CC142B297EEB5000DC5E89 /* Router */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		117BD91F297993C900FB2C9F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		117D2725296F1B1F00FA4D3B /* FullScreenContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenContent.swift; sourceTree = "<group>"; };
 		11BBAFEB2969E2AA00C0A213 /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
-		11E8AFF62971A8A700969833 /* Router */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Router; sourceTree = "<group>"; };
+		11CC142A297EEB4300DC5E89 /* SwiftUIRouter */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIRouter; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E8AFFB2971AA2A00969833 /* Router in Frameworks */,
+				11CC142C297EEB5000DC5E89 /* Router in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 		11E8AFF52971A8A700969833 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				11E8AFF62971A8A700969833 /* Router */,
+				11CC142A297EEB4300DC5E89 /* SwiftUIRouter */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			);
 			name = RouterExample;
 			packageProductDependencies = (
-				11E8AFFA2971AA2A00969833 /* Router */,
+				11CC142B297EEB5000DC5E89 /* Router */,
 			);
 			productName = RouterExample;
 			productReference = 11688FD229127474007C3E7F /* RouterExample.app */;
@@ -406,7 +406,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		11E8AFFA2971AA2A00969833 /* Router */ = {
+		11CC142B297EEB5000DC5E89 /* Router */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Router;
 		};
