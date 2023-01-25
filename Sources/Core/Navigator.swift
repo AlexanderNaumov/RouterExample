@@ -21,12 +21,15 @@ public final class Navigator: ObservableObject {
     public func back(with path: String? = nil) {
         if let path {
             if let index = historyStack.firstIndex(where: { match(path, path: $0) }) {
-                let path = historyStack.remove(at: index)
-                self.path.send(path)
+                historyStack.remove(at: index)
+                let previousIndex = index - 1
+                guard previousIndex < historyStack.count else { return }
+                self.path.send(historyStack[previousIndex])
             }
         } else {
-            let path = historyStack.removeLast()
-            self.path.send(path)
+            historyStack.removeLast()
+            guard let last = historyStack.last else { return }
+            self.path.send(last)
         }
     }
     

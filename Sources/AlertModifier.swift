@@ -8,10 +8,12 @@ private struct AlertModifier: ViewModifier {
     
     func body(content: Content) -> some View {
         content
-            .alert(isPresented: $isPresented) {
+            .background(ZStack {}.alert(isPresented: $isPresented) {
                 let params = params(path, path: navigator.path.value)
-                return alert(params)
-            }
+                    return alert(params)
+                }
+            )
+        
             .onChange(of: isPresented) {
                 guard !$0 else { return }
                 navigator.back(with: path)
